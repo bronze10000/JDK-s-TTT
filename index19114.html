@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html ng-app="tttApp">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style121914.css"/>
+		<script src="angular.min.js"></script>
+		<!-- Firebase -->
+		<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+		<script src="main4.js"></script>
+	</head>
+	<body ng-controller="GameController">
+		<h1>TIC TAC TOE</h1>
+		<div id ="box">
+
+			<canvas id="canvas1"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(1)"></canvas>
+			<canvas id="canvas2"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(2)"></canvas>
+			<canvas id="canvas3"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(3)"></canvas><br/>
+			<canvas id="canvas4"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(4)"></canvas>
+			<canvas id="canvas5"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(5)"></canvas>
+			<canvas id="canvas6"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(6)"></canvas><br/>
+			<canvas id="canvas7"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(7)"></canvas>
+			<canvas id="canvas8"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(8)"></canvas>
+			<canvas id="canvas9"  width="120" height="120" style="border:1px solid black" ng-click="canvasClicked(9)"></canvas>
+		</div>
+		<div style="clear: both;">
+
+		</div>
+		<div>
+			painted {{db.painted}} </Br> 
+			content {{db.content}} </Br> 
+			turn {{db.turn}} </Br>
+			theCanvas {{db.theCanvas}} </Br>
+			c {{db.c}} </Br>
+			cxt {{db.cxt}} </Br>
+			squaresFilled {{db.squaresFilled}} </Br>
+			canvasClicked {{db.canvasClicked}} </Br>
+			y {{db.y}} </Br>
+
+
+		</div>	
+	</body>
+</html>
+<!-- trying to commit to Github, 1/7/15 -->
+
